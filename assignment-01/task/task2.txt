@@ -1,0 +1,4 @@
+Task 2:
+Added 2 more entries in name/file.txt and company/file.txt using command line.
+Displayed first 4 entries of name/file.txt using head command.
+Displayed last 4 entries of company/file.txt using tail command.

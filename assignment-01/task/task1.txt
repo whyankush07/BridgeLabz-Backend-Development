@@ -1,0 +1,4 @@
+Task 1:
+Created a directory named 'task' with subdirectories 'name' and 'company'.
+Created file.txt inside both subdirectories and task1.txt, task2.txt inside task.
+Added 5 initial entries in name/file.txt and company/file.txt using command line.
