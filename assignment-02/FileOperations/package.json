@@ -1,0 +1,11 @@
+{
+  "name": "fileoperations",
+  "version": "1.0.0",
+  "main": "ops.js",
+  "scripts": {
+    "start": "node ops.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

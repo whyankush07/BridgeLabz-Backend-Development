@@ -1,0 +1,12 @@
+2026-01-22T17:15:06.552Z | GET | /
+2026-01-22T17:15:06.930Z | GET | /favicon.ico
+2026-01-22T17:15:37.081Z | GET | /students
+2026-01-22T17:15:37.455Z | GET | /favicon.ico
+2026-01-22T17:15:55.276Z | GET | /students/2
+2026-01-22T17:15:55.344Z | GET | /favicon.ico
+2026-01-22T17:16:30.981Z | GET | /students%20-H%20%22Content-Type:%20application/json%22%20-d%20'%7B%22name%22:%22John%20Doe%22,%22branch%22:%22CSE%22,%22cgpa%22:8.0,%22placed%22:false%7D'
+2026-01-22T17:16:31.068Z | GET | /favicon.ico
+2026-01-22T17:17:56.082Z | POST | /students
+2026-01-22T17:18:22.630Z | GET | /students
+2026-01-22T17:18:49.188Z | DELETE | /students/1
+2026-01-22T17:18:51.332Z | GET | /students
