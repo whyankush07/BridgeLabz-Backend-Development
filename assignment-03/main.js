@@ -1,0 +1,66 @@
+const fs = require('fs');
+
+const answers = `
+ANSWERS TO FILE SYSTEM QUESTIONS
+================================
+
+1. What is the difference between synchronous and asynchronous file operations?
+
+Synchronous operations block the code execution until the operation completes. The program waits and cannot do anything else. Asynchronous operations don't block - they allow the program to continue running while the file operation happens in the background, using callbacks or promises to handle the result when ready. Async is better for performance in Node.js applications.
+
+
+2. When should you use file streams instead of reading the entire file?
+
+Use streams when dealing with large files (like 100MB+ logs or videos) that would consume too much memory if loaded entirely. Streams process data in small chunks, keeping memory usage low. Also use streams when you need to process data while it's being read, like parsing logs line-by-line or transferring files over a network.
+
+
+3. Explain the purpose of the 'utf8' encoding parameter in file operations.
+
+The 'utf8' encoding tells Node.js to convert the raw binary data into readable text strings. Without it, you get a Buffer object (raw bytes). UTF-8 is the standard encoding for text files and supports all languages and special characters. Always use it when working with text files.
+
+
+4. What are the common error codes in file system operations and what do they mean?
+
+- ENOENT: File or directory not found (Error NO ENTry)
+- EACCES: Permission denied, no access rights (Error ACCESs)
+- EEXIST: File already exists when trying to create
+- EISDIR: Expected file but found directory
+- ENOTDIR: Expected directory but found file
+- EMFILE: Too many open files
+
+
+5. How would you safely delete a directory with all its contents?
+
+Use fs.rm(path, { recursive: true, force: true }) in modern Node.js (v14.14+), or fs.rmdir(path, { recursive: true }) for older versions. The recursive option deletes all contents inside. Always check if the directory exists first using fs.access() or handle errors properly to avoid crashes. Never delete without user confirmation in production.
+
+
+6. Explain the concept of piping in streams with an example.
+
+Piping connects the output of one stream directly to the input of another, like connecting pipes. Example: 
+  const readStream = fs.createReadStream('input.txt');
+  const writeStream = fs.createWriteStream('output.txt');
+  readStream.pipe(writeStream);
+
+This reads from input.txt and writes to output.txt without loading everything into memory. It's efficient and clean.
+
+
+7. Why is it important to handle errors in file operations?
+
+File operations can fail for many reasons - missing files, permission issues, full disk, or network problems. Without error handling, your program crashes and users see confusing messages. Proper error handling lets you show helpful messages, retry operations, use fallbacks, or gracefully degrade functionality instead of crashing.
+
+
+8. What is the difference between writeFile and appendFile methods?
+
+writeFile replaces the entire file content - it deletes what was there before and writes new content. appendFile adds new content to the end of existing content without deleting anything. Use writeFile for creating new files or overwriting, use appendFile for logs or adding data to existing files.
+
+
+================================
+`;
+
+fs.writeFile('answers.txt', answers.trim(), 'utf8', (err) => {
+    if (err) {
+        console.error('Error writing answers:', err.message);
+    } else {
+        console.log('Successfully created answers.txt with all answers!');
+    }
+});

@@ -1,0 +1,12 @@
+
+=== Log File Analysis Report ===
+Generated: 22/1/2026, 9:17:47 pm
+
+Total Lines: 20
+ERROR Count: 5
+WARNING Count: 5
+INFO Count: 10
+
+ERROR Percentage: 25.00%
+WARNING Percentage: 25.00%
+INFO Percentage: 50.00%

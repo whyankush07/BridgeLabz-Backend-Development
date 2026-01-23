@@ -1,0 +1,22 @@
+[2026-01-22T16:36:02.019Z] Starting backup and cleanup process...
+[2026-01-22T16:36:02.024Z] Backed up: document1.txt
+[2026-01-22T16:36:02.027Z] Backed up: image.jpg
+[2026-01-22T16:36:02.028Z] Total files backed up: 2
+[2026-01-22T16:36:02.030Z] Total old files deleted: 0
+[2026-01-22T16:36:02.030Z] Process completed successfully!
+[2026-01-22T16:36:39.275Z] Starting backup and cleanup process...
+[2026-01-22T16:36:39.280Z] Backed up: document1.txt
+[2026-01-22T16:36:39.281Z] Backed up: image.jpg
+[2026-01-22T16:36:39.282Z] Total files backed up: 2
+[2026-01-22T16:36:39.284Z] Total old files deleted: 0
+[2026-01-22T16:36:39.284Z] Process completed successfully!
+[2026-01-22T16:41:40.488Z] Starting backup and cleanup process...
+[2026-01-22T16:41:40.493Z] Backed up: document1.txt
+[2026-01-22T16:41:40.502Z] Backed up: image.jpg
+[2026-01-22T16:41:40.503Z] Backed up: report.pdf
+[2026-01-22T16:41:40.507Z] Backed up: subfolder\config.txt
+[2026-01-22T16:41:40.508Z] Backed up: subfolder\data.json
+[2026-01-22T16:41:40.509Z] Backed up: subfolder\notes.txt
+[2026-01-22T16:41:40.510Z] Total files backed up: 6
+[2026-01-22T16:41:40.511Z] Total old files deleted: 0
+[2026-01-22T16:41:40.512Z] Process completed successfully!

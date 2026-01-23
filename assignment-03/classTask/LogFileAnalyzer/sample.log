@@ -1,0 +1,20 @@
+2026-01-22 10:15:32 INFO Server started successfully on port 8080
+2026-01-22 10:15:45 INFO Database connection established
+2026-01-22 10:16:12 WARNING High memory usage detected: 85%
+2026-01-22 10:16:30 INFO User login: john@example.com
+2026-01-22 10:17:05 ERROR Failed to connect to payment gateway
+2026-01-22 10:17:06 WARNING Retrying payment gateway connection
+2026-01-22 10:17:15 INFO Payment gateway connected
+2026-01-22 10:18:22 INFO Processing order #12345
+2026-01-22 10:19:01 ERROR Database query timeout
+2026-01-22 10:19:02 ERROR Transaction rolled back
+2026-01-22 10:19:30 WARNING Slow query detected: 3.5s
+2026-01-22 10:20:15 INFO User logout: john@example.com
+2026-01-22 10:21:05 INFO New user registered: sarah@example.com
+2026-01-22 10:22:10 WARNING Disk space below 20%
+2026-01-22 10:23:45 INFO Backup completed successfully
+2026-01-22 10:24:12 ERROR Cache server unreachable
+2026-01-22 10:25:00 INFO Using fallback cache
+2026-01-22 10:26:33 WARNING API rate limit approaching: 95%
+2026-01-22 10:27:18 INFO API request processed
+2026-01-22 10:28:50 ERROR Authentication failed for user: hacker@test.com

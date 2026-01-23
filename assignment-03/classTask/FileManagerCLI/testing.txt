@@ -1,0 +1,1 @@
+Testing the write command feature of CLI tool
