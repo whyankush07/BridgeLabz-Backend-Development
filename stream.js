@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 class FileManager {
-    async readFile(filePath : string) {
+    async readFile(filePath ) {
         try {
             const data = await fs.readFile(filePath, 'utf-8');
             console.log('File Content:');
@@ -13,7 +13,7 @@ class FileManager {
         }
     }
 
-    async writeFile(filePath: string, content: string) {
+    async writeFile(filePath, content) {
         try {
             await fs.writeFile(filePath, content, 'utf-8');
             console.log(`✓ Successfully written to ${filePath}`);
@@ -22,7 +22,7 @@ class FileManager {
         }
     }
 
-    async appendFile(filePath: string, content: string) {
+    async appendFile(filePath, content) {
         try {
             await fs.appendFile(filePath, content + '\n', 'utf-8');
             console.log(`✓ Successfully appended to ${filePath}`);
@@ -31,7 +31,7 @@ class FileManager {
         }
     }
 
-    async copyFile(source: string, destination: string) {
+    async copyFile(source, destination) {
         try {
             await fs.copyFile(source, destination);
             console.log(`✓ Successfully copied ${source} to ${destination}`);
@@ -40,7 +40,7 @@ class FileManager {
         }
     }
 
-    async deleteFile(filePath: string) {
+    async deleteFile(filePath) {
         try {
             await fs.unlink(filePath);
             console.log(`✓ Successfully deleted ${filePath}`);
@@ -49,7 +49,7 @@ class FileManager {
         }
     }
 
-    async listFiles(dirPath: string) {
+    async listFiles(dirPath) {
         try {
             const files = await fs.readdir(dirPath, { withFileTypes: true });
             console.log(`\nContents of ${dirPath}:`);
@@ -60,7 +60,7 @@ class FileManager {
                 return;
             }
 
-            files.forEach((file: any) => {
+            files.forEach((file) => {
                 const type = file.isDirectory() ? '[DIR]' : '[FILE]';
                 console.log(`${type} ${file.name}`);
             });
@@ -70,7 +70,7 @@ class FileManager {
         }
     }
 
-    handleError(error: any, operation: string) {
+    handleError(error, operation) {
         if (error.code === 'ENOENT') {
             console.error(`✗ Error: File or directory not found while ${operation}`);
         } else if (error.code === 'EACCES') {
