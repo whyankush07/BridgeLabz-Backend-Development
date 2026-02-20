@@ -1,1 +1,1 @@
-I am batman
+Hello, this is async function inside scope

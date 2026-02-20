@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+    <h2>Student Details</h2>
+
+    <p><strong>Name:</strong>
+        <%= student.name %>
+    </p>
+    <p><strong>Marks:</strong>
+        <%= student.marks %>
+    </p>
+    <p><strong>Status:</strong>
+        <% if (student.marks>= 50) { %>
+            Pass
+            <% } else { %>
+                Fail
+                <% } %>
+    </p>
+
+    <a href="/students">Back</a>
+
+    <%- include('partials/footer') %>
